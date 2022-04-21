@@ -1,51 +1,51 @@
 {
-  "name": "knex-hooks",
-  "version": "0.0.9",
-  "engines": {
-    "node": ">=6.x"
-  },
-  "keywords": [
-    "knex",
-    "hooks",
-    "sql",
-    "query"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/alekbarszczewski/knex-hooks"
-  },
-  "description": "Knex before/after insert/update/select/delete hooks",
-  "main": "src/knex-hooks.js",
-  "scripts": {
-    "test": "./node_modules/.bin/eslint ./src/** ./test/** && ./node_modules/.bin/mocha -R spec",
-    "release": "./scripts/release.sh"
-  },
-  "author": {
-    "name": "Alek Barszczewski",
-    "url": "https://github.com/alekbarszczewski"
-  },
-  "license": "ISC",
-  "dependencies": {
-    "bluebird": "^3.7.2",
-    "co": "^4.6.0",
-    "lodash.isfunction": "^3.0.8",
-    "lodash.remove": "^4.7.0",
-    "make-array": "^1.0.1",
-    "object.values": "^1.0.4"
-  },
-  "peerDependencies": {
-    "knex": "^0.12.6"
-  },
-  "devDependencies": {
-    "eslint": "^3.13.1",
-    "expect.js": "^0.3.1",
-    "knex": "^0.12.6",
-    "mariasql": "^0.2.6",
-    "mocha": "^3.2.0",
-    "mysql": "^2.12.0",
-    "mysql2": "^1.1.2",
-    "pg": "^6.1.2",
-    "sinon": "^1.17.7",
-    "sqlite3": "^3.1.8"
-  }
+	"name": "knex-hooks",
+	"version": "0.0.9",
+	"engines": {
+		"node": ">=14.x"
+	},
+	"keywords": [
+		"knex",
+		"hooks",
+		"sql",
+		"query"
+	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/alekbarszczewski/knex-hooks"
+	},
+	"description": "Knex before/after insert/update/select/delete hooks",
+	"main": "src/knex-hooks.js",
+	"scripts": {
+		"test": "./node_modules/.bin/mocha ./test/**.js -R spec",
+		"release": "./scripts/release.sh",
+		"lint": "eslint ."
+	},
+	"author": {
+		"name": "Alek Barszczewski",
+		"url": "https://github.com/alekbarszczewski"
+	},
+	"license": "ISC",
+	"dependencies": {
+		"lodash.isfunction": "^3.0.8",
+		"make-array": "^1.0.1",
+		"object.values": "^1.0.4"
+	},
+	"peerDependencies": {
+		"knex": "^1.0.7"
+	},
+	"devDependencies": {
+		"eslint": "^8.13.0",
+		"eslint-config-prettier": "^8.5.0",
+		"eslint-plugin-prettier": "^4.0.0",
+		"expect.js": "^0.3.1",
+		"knex": "^1.0.7",
+		"mocha": "^9.2.2",
+		"mysql": "^2.18.1",
+		"mysql2": "^2.3.3",
+		"pg": "^8.7.3",
+		"prettier": "^2.6.2",
+		"sinon": "^13.0.2",
+		"sqlite3": "^5.0.4"
+	}
 }
