@@ -1,6 +1,6 @@
 {
 	"name": "knex-hooks",
-	"version": "0.0.10",
+	"version": "0.0.9",
 	"engines": {
 		"node": ">=14.x"
 	},
